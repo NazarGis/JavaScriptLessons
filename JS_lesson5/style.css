@@ -1,0 +1,8 @@
+.root table{
+    border-collapse: collapse;
+}
+.root table td, th{
+    border: 1px solid gray;
+    padding: 2px;
+    text-align: center;
+}
