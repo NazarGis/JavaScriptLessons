@@ -174,3 +174,96 @@ for(let i=1; i<t_rows.length; i++){
     td.textContent = (temp[i-1].reduce((acc, val) => acc + val)/temp[i-1].length).toFixed(2);
     t_rows[i].append(td);
 }
+
+//----------- Домашнє завдання Мінімальні та максимальні значення температур
+
+function min(){
+    for(let i=1; i<t_rows.length; i++){
+        let td = document.createElement('TD');
+        td.textContent = Math.min(...temp[i-1]);
+        t_rows[i].append(td);
+    }
+    
+}
+
+function max(){
+    for(let i=1; i<t_rows.length; i++){
+        let td = document.createElement('TD');
+        td.textContent = Math.max(...temp[i-1]);
+        t_rows[i].append(td);
+    }
+}
+
+function hours(){
+    for(let i=1; i<t_rows.length; i++){
+        let td = document.createElement('TD');
+        td.textContent = temp[i-1].indexOf(Math.max(...temp[i-1]))+1;
+        t_rows[i].append(td);
+    }
+}
+
+function create_min(node,zag,func){
+    let th = document.createElement('TH');
+    th.textContent = zag;
+    t_rows[node].appendChild(th);
+    func;
+}
+
+
+function create_max(node,zag,func){
+    let th = document.createElement('TH');
+    th.textContent = zag;
+    t_rows[node].appendChild(th) ;
+    func;
+}
+
+function create_hours(node,zag,func){
+    let th = document.createElement('TH');
+    th.textContent = zag;
+    t_rows[node].appendChild(th);
+    func;
+}
+create_min(0,'min',min());
+create_max(0,'max',max());
+create_hours(0,'t=max hours',hours());
+
+//-----------Додаткові завдання
+
+let root2 = document.querySelector('.root2');
+
+//-----------1
+
+let array1 = [2,-5,-9,2,-4,5,34,-11,2,3,-4,5,-6,9];
+document.write("Завдання №1: Дано масив: " + array1 +"<br>")
+let arr1_neg = array1.filter( array1 => array1 < 0);
+document.write("Cума від'ємних елементів масиву = " + arr1_neg.reduce((acc, val) => acc + val) + "<br>");
+
+//-----------2
+
+let array2 = [45,65,48,52,45,-78,-96,25,14,25,45]
+document.write("<br>Завдання №2: Дано масив: " + array2)
+document.write("<br>Номер максимального елемента масиву = " + array2.indexOf(Math.max(...array2))+"<br>")
+
+//-----------3
+
+let array3 = [];
+
+for ( let i=1; i<=100; i++){
+    array3.push(Math.round(Math.random()*10));
+}
+document.write("<br>Завдання №3: Дано масив: " + array3 + "<br>")
+document.write("Сума елементів масиву = " + array3.reduce((acc,val) => acc + val) +"<br>");
+
+//----------4
+
+let array4 = []
+for ( let i=1; i<=50; i++){
+    array4.push(Math.round(Math.random()*10));
+}
+document.write("<br>Завдання №4: Дано масив: " + array4 + "<br>")
+
+let arr4_nepar = array4.filter(array4 => array4 % 2 != 0) ;
+
+let arr4_dob = arr4_nepar.reduce((a,b) => a*b);
+
+document.write("Добуток непарних елементів масиву = " + arr4_dob);
