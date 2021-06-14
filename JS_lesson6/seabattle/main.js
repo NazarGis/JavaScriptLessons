@@ -23,6 +23,12 @@ function build_table(place,table){
     fill_table(table, battle_place);
     
     $add_ships.addEventListener('click', function(){
+        if ($add_ships.hasAttribute('checked')){
+            $add_ships.removeAttribute('checked')
+        }
+        else{
+            $add_ships.setAttribute('checked', 'cheked');
+        }
         build = $add_ships.checked;
         console.log(build);
     })
