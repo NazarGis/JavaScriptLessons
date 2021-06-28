@@ -1,0 +1,89 @@
+body{
+    background-color: gainsboro;
+}
+.overlay{
+    background-color: rgba(0, 0, 0, 0.74);
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+.info{
+    background-color: white;
+    width: 70%;
+    padding: 10px;
+    position: relative;
+    padding: 20px;
+    height: 50%;
+}
+.close{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+ul.main-menu{
+    list-style-type: none;
+    width: 400px;
+    padding: 0;
+    text-transform: uppercase;
+    color: white;
+}
+ul.sub-menu{
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    margin-left: -20px;
+    display: none;
+}
+ul.main-menu li{
+    padding: 3px 0px 0px 20px;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
+
+ul.main-menu>li{
+    background-color: #af2646;
+}
+ul.main-menu>li>h2{
+    margin: 10px 15px;
+    display: inline-block;
+}
+ul.main-menu>li>span{
+    float: right;
+    padding: 15px;
+}
+ul.main-menu>li::before{
+    font-family: FontAwesome;
+    display: inline-block;
+    font-size: x-large;
+}
+ul.main-menu>li:nth-child(1):before{
+    content: '\f007';
+}
+ul.main-menu>li:nth-child(2):before{
+    content: '\f0e0';
+}
+ul.main-menu>li:nth-child(3):before{
+    content: '\f013';
+}
+ul.sub-menu>li{
+    background-color: #5e252c;
+    font-weight: normal;
+    font-size: large;
+    padding: 10px 40px;
+}
+ul.sub-menu>li>span{
+    padding-right: 10px;
+}
+ul.sub-menu>li:last-of-type{
+    border-bottom: none;
+}
+
