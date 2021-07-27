@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Номер(індекс)/зображення/Назва/Автори/Видавництво/Рік видання/Опис/link -->
+    <!-- START add BOOK FORM -->
+    <div class="container">
+    <div class="add-item row">
+        <h3 class="col-12">Add book</h3>
+        <div class="col-12 col-md-6">
+            <label for="input">Title</label>
+            <input type="text" name ="title" class="form-control" required>
+        </div>
+        <div class="col-12 col-md-6">
+            <label for="input">Autors</label>
+            <input type="text" name ="autors" class="form-control" required>
+        </div>
+        <div class="col-12 col-md-6">
+            <label for="input">Publisher</label>
+            <input type="text" name ="publisher" class="form-control" required>
+        </div>
+        <div class="col-12 col-md-6">
+            <label for="input">Year</label>
+            <input type="text" name ="year" class="form-control" required>
+        </div>
+        <div class="col-12 col-md-6">
+            <label for="input">Image</label>
+            <input type="text" name ="image" class="form-control" required>
+        </div>
+        <div class="col-12 col-md-6">
+            <label for="input">Link</label>
+            <input type="text" name ="link" class="form-control" required>
+        </div>
+        <div class="col-12">
+            <label for="input">Description</label>
+            <textarea name="description" cols="30" rows="5" class="form-control" required></textarea>
+        </div>
+        <button class="add-btn col-2 btn btn-primary">Add</button>
+    </div>
+    </div>
+<!-- END add BOOK FORM -->
+
+<!-- START BOOK LIST -->
+<div class="book-list container">
+    <h2>Books</h2>
+    <div class="row">
+        <!-- <article class="col-6 d-flex align-items-start">
+                <img src="./img/Братство_Персня.jpg" alt="" class="col-4">
+            <div class="col-8">
+                <h4 class="title">Title</h4>
+                <p class="autors">Bob Rob,<i class="year">2000</i></p>
+                <p class="publisher"></p>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae commodi fugiat labore harum? Aspernatur animi culpa, quod ab omnis aperiam laborum perferendis porro ad sapiente nemo inventore voluptatum, quisquam sed.</p>
+                <button class="read-more">More</button>
+                <a href="#" class="read-btn">Read</a>
+            </div>
+        </article>
+        <article class="col-6 d-flex align-items-start">
+            <img src="./img/93410047.jpg" alt="" class="col-4">
+        <div class="col-8">
+            <h4 class="title">Title</h4>
+            <p class="autors">Bob Rob,<i class="year">2000</i></p>
+            <p class="publisher"></p>
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae commodi fugiat labore harum? Aspernatur animi culpa, quod ab omnis aperiam laborum perferendis porro ad sapiente nemo inventore voluptatum, quisquam sed.</p>
+            <button class="read-more">More</button>
+            <a href="#" class="read-btn">Read</a>
+        </div>
+    </article> -->
+    </div>
+
+</div>
+<!-- END BOOK LIST -->
+
+    <script src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+button{
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: bolder;
+    border: 2px solid black;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: large;
+    margin: 0 30px;
+    
+}
+table{
+    width: 100%;
+    display: none;
+}
+table td{
+    background-color: red;
+    border: 2px solid black;
+    vertical-align: top;
+    border-radius: 10px;
+    padding: 20px;
+    width: 240px;
+}
+table th{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: large;
+}
+#LukeBtn, .Luke td{
+    background-color: rgb(27, 216, 27);
+}
+#VaderBtn,.Vader td{
+    background-color: red;
+}
+#KenobiBtn, .Kenobi td{
+    background-color: rgb(56, 92, 252);
+}
+.person,.btns{
+    width: 1200px;
+    margin: 30px auto;
+}
+.btns{
+    text-align: center;
+}
+

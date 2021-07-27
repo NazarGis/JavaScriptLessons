@@ -1,0 +1,14 @@
+.add-btn{
+    margin: 15px;
+}
+
+.book-list article{
+    border: 1px solid rgba(192, 192, 192, 0.685);
+    padding: 5px;
+    box-shadow: 0 0 5px 3px gray;
+}
+
+p.description{
+    max-height: 120px;
+    overflow: hidden;
+}

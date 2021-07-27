@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+form{
+    padding: 15px ;
+    background-color: antiquewhite;
+}
+label{
+    font-weight: bold;
+}
+input{
+   margin-bottom: 10px;
+}
+button{
+    width: 100%;
+}
+form a{
+    display: block;
+    text-align: right;
+    margin-top: 10px;
+}
+h4{
+    margin: 10px 0;
+}
+table{
+    border-collapse: collapse;
+}
+table td{
+    border: 1px solid black;
+    padding: 10px;
+}
+table td:last-child{
+    font-weight: bold;
+}
+#loginFt, #passwordFt{
+    width: 100%;
+}
+#male, #female{
+    width: 20px;
+}
+#fourthTask label{
+    border: 1px solid black;
+    padding: 5px;
+}
+#fourthTask input{
+    height: 30px;
+    width: 28.4%;
+}
+#fifthTask input{
+    width: 485px;
+}
+#fifthTask label{
+    width: 130px;
+    display: inline-block;
+}
+.container{
+    width: 650px;
+    margin: 0 auto;
+}
+.form-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px ;
+}
+.form-container input{
+    width: 100%;
+}
+.colors-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+.allQuestions{
+    border-bottom: 1px solid gray;
+}
+.result{
+    display: none;
+}

@@ -1,0 +1,64 @@
+body{
+    background-color: antiquewhite;
+}
+h1{
+    text-align: center;
+}
+div{
+    width: 1200px;
+    margin: 30px auto;
+    text-align: center;
+}
+button{
+    cursor: pointer;
+    font-size: 14px;
+    padding: 3px;
+}
+.task-3{
+    text-align: left;
+}
+.task-4 section{
+    display: flex; 
+    border: 2px solid rgb(47, 112, 177);
+    height: 150px;
+}
+.task-4 section p{
+    display: none;
+    text-align: left;
+    padding-left: 10px;
+    width: 990px;
+}
+.task-4 section ul{
+    list-style-type: none;
+    text-align: left;
+    background-color: rgb(47, 112, 177);
+    color: white;
+    padding: 0;
+    margin: 0 ;
+    width: 190px;
+}
+.task-4 section ul li{
+    padding: 10px;
+    display: block;
+    cursor: pointer;
+}
+.task-4 section ul li:hover{
+    background-color: rgb(39, 86, 133);
+}
+.active-li{
+    background-color: rgb(39, 86, 133);
+}
+.task-5 article{
+    position: relative;
+    text-align: left;
+    border-bottom: 1px solid gray;
+}
+.task-5 article button{
+    position: absolute;
+    top:5px;
+    right: 10px;
+}
+.task-6 progress{
+    height: 30px;
+    margin-bottom: 15px;
+}

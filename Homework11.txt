@@ -1,0 +1,5 @@
+на 11 балів виконати всі завдання з файлу 
+https://drive.google.com/file/d/1HayN2M1XvpgAvajlJYCbNZwV-C-lZQNL/view?usp=sharing
+
+на 12 балів реалізувати переміщення прямокутника по сторінці при клікові на відповідну кнопку (завдання 9-11) 
+https://drive.google.com/file/d/1en6Yk7DGxlLtfGmt1JsXHmvnFhoZz-cN/view?usp=sharing

@@ -1,0 +1,28 @@
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: blue;
+}
+table{
+    margin: 30px auto;
+    border-collapse: collapse;
+    font-size: 18px;
+    width: 1200px;
+}
+table td{
+    border: 2px solid aqua;
+    padding: 10px;
+}
+table tr{
+    height: 30px;
+}
+table td:first-child{
+    width: 950px;
+}
+table td:last-child{
+    width: 250px;
+    text-align: center;
+}
+button{
+    cursor: pointer;
+}

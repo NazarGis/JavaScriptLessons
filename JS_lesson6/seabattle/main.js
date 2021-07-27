@@ -35,9 +35,6 @@ function build_table(place,table){
 
     build_ships(table, battle_place,build)
     shoot(table, battle_place,build);
-
-    
-
     
 }
 
@@ -63,14 +60,19 @@ function fill_table(table, array){
 }
 
 
-
-
 function shoot(table, array){
     for (let i = 1; i <= 10; i++){
         for(let j=1; j<=10; j++){
             table.childNodes[i].childNodes[j].addEventListener('click', function(){
                 if(!build){
                 this.textContent = '*'; 
+                if(array[i-1][j-1] == 1){
+                this.classList.remove('ship')
+                this.classList.add('destroy')
+            }
+            else{
+                this.classList.add('shoot')
+            }
                 array[i-1][j-1] = '*';
                 console.log(array);
                 }
@@ -85,7 +87,16 @@ function build_ships(table, array){
             table.childNodes[i].childNodes[j].addEventListener('click', function(){
                 if(build){
                 this.textContent = '1'; 
+                this.classList.add('ship')
                 array[i-1][j-1] = '1';
+                console.log(array);
+                }
+            })
+            table.childNodes[i].childNodes[j].addEventListener('contextmenu', function(event){
+                if(build){
+                event.preventDefault()
+                this.textContent = '0'; 
+                array[i-1][j-1] = '0';
                 console.log(array);
                 }
             })

@@ -1,0 +1,46 @@
+.red{
+    color: red;
+    font-weight: bold;
+    font-style: italic;
+}
+h1{
+    text-align: center;
+}
+.wrapper{
+    display: flex;
+    width: 1200px;
+    margin: 0px auto;
+    align-items: flex-start;
+}
+.wrapper .nav{
+    border: 1px solid gray;
+    width: 200px;
+    margin-right: 20px;
+}
+.wrapper .nav li{
+    cursor: pointer;
+}
+.wrapper .content{
+    border: 1px solid red;
+    width: 100%;
+}
+.wrapper .content article{
+    display: none;
+}
+.wrapper .content article h2{
+    text-align: center;
+
+}
+.wrapper .content article p{
+    text-align: justify;
+    text-indent:  20px;
+
+}
+.wrapper .content article img{
+    margin: 0 auto;
+    display: block;
+
+}
+.show{
+    display: block !important; 
+}

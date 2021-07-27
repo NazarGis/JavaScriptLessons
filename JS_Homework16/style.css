@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: lightblue;
+}
+form{
+    text-align: center;
+    font-size: x-large;
+    padding: 50px;
+    border-radius: 10px;
+}
+form input{
+    height: 30px;
+    font-size: large;
+    margin-left: 70px;
+}
+p{
+    font-size: xx-large;
+    color: white;
+    padding: 30px 10px;
+    
+}
+h2{
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+button{
+    width: 100px;
+    height: 30px;
+    font-size: large;
+    margin-top: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#password{
+    margin-left:35px;
+}
+#regForm{
+    border: 1px solid white;
+    margin: 20% auto;
+    width: 40%;
+    background-color: lightgray;
+    box-shadow: 0px 0px 0px 5px #A0A0A0, inset 0px 10px 27px -8px #141414, inset 0px -10px 27px -8px #141414, 5px 5px 15px 5px rgba(255,255,255,0);
+}
+#infoForm{
+    border: 1px solid gray;
+    width: 50%;
+    margin: 5% auto;
+}
+#signIn,#name,#email,#forName,#forEmail{
+    display: none;
+}
+.user{
+    width: 100%;
+    height: 120px;
+    background-color: rgb(0, 89, 255);
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+.profile{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: burlywood;
+    text-align: center;
+    padding: 15px;
+    color:rgb(177, 4, 4);
+    font-size: xx-large;
+    cursor: pointer;
+}
+.overlay{
+    background-color: rgba(0, 0, 0, 0.74);
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+.info{
+    background-color: white;
+    width: 50%;
+    padding: 10px;
+    position: relative;
+    padding: 20px;
+    height: 50%;
+    text-align: center;
+}
+.close{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-weight: bold;
+    font-size: x-large;
+    cursor: pointer;
+}

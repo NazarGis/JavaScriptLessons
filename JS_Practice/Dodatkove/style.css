@@ -1,0 +1,33 @@
+.banner{
+    border: 1px solid black;
+    position: relative;
+    width: 1280px;
+    margin: 50px auto;
+    height: 720px;
+    display: flex;
+}
+
+.fa-arrow-left, .fa-arrow-right{
+    position: absolute;
+    font-size: xx-large;
+    cursor: pointer;
+    color: white
+}
+.fa-arrow-left{
+    top:320px;
+    left: 10px;
+
+}
+.fa-arrow-right{
+    top:320px;
+    right: 10px;
+}
+.fa-arrow-left:hover, .fa-arrow-right:hover{
+    text-decoration: underline;
+}
+.banner img{
+    display: none;
+}
+.banner img:nth-child(1){
+    display: block;
+}

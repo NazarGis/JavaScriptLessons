@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"> 
+    <style>
+        .big{
+            background-color: green;
+            height: 300px;
+            width: 300px;
+        }
+        .small{
+            background-color: yellow;
+            height: 100px;
+            width: 100px;
+        }
+        .middle{
+            background-color: red;
+            height: 200px;
+            width: 200px;
+        }
+        a{
+            height: 30px;
+            width: 50px;
+            background-color: royalblue;
+            text-align: center;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="big">
+        <div class="middle">
+            <div class="small"></div>
+        </div>
+    </div>
+    <p></p>
+    <script>
+        let big = document.querySelector('.big'),
+            middle = document.querySelector('.middle'),
+            small = document.querySelector('.small'),
+            p = document.querySelector('p')
+
+        big.addEventListener('click',(event)=>{
+            event.stopPropagation()
+            p.textContent = p.textContent + ' big'
+            console.log('big')
+        })
+        middle.addEventListener('mousemove',(event)=>{
+            // event.stopPropagation()
+            p.textContent = p.textContent + ' m'
+            console.log('middle')
+        })
+        small.addEventListener('mousemove',(event)=>{
+            // event.stopPropagation()
+            p.textContent = p.textContent + ' s'
+            console.log('small')
+        })
+        document.body.addEventListener('click',(event)=>{
+            console.log('body')
+        })
+    </script> -->
+    <!-- <form action="" name="f1">
+        <input type="text" required placeholder="111" name="inp">
+        <button>Submit</button>
+        <a href="https://logbook.itstep.org">GO</a>
+    </form> -->
+    <!-- <ul>
+        <li>List item</li>
+        <li>List item</li>
+        <li>List item</li>
+        <li>List item</li>
+        <li>List item</li>
+    </ul> -->
+
+    <!-- <button>Click</button> -->
+    <ul class="main-menu">
+        <li>List item
+            <ul class="sub-menu">
+                <li>List item</li>
+                <li>List item</li>
+            </ul>
+        </li>
+        <li>List item
+            <ul class="sub-menu">
+                <li>List item</li>
+                <li>List item</li>
+            </ul>
+        </li>
+        <li>List item
+            <ul class="sub-menu">
+                <li>List item</li>
+                <li>List item</li>
+            </ul>
+        </li>
+    </ul>
+    <div class="overlay">
+        <div class="info">
+            <p>
+                
+            </p>
+            <span class="close">x</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

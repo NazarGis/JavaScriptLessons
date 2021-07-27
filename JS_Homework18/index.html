@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./sctyle.css">
+</head>
+<body>
+    <form name="printText">
+        <table>
+            <tr>
+                <td><label for="txt">Текст</label></td>
+                <td><input type="text" name="txt"></td>
+            </tr>
+            <tr>
+                <td><label for="fontSize">Розмір шрифта</label></td>
+                <td><input type="text" name="fontSize"></td>
+            </tr>
+            <tr>
+                <td><label for="fontColor">Колір шрифта</label></td>
+                <td><input type="color" name="fontColor"></td>
+            </tr>
+            <tr>
+                <td><label for="fontFamily">Сімейство шрифтів</label></td>
+                <td><select name="fontFamily">
+                    <option>Arial</option>
+                    <option>Calibri</option>
+                    <option>Cambira</option>
+                    <option>Courier</option>
+                    <option>Geneva</option>
+                    <option>Georgia</option>
+                    <option>Helvetica</option>
+                    <option>Tahoma</option>
+                    <option>Times New Roman</option>
+                    <option>Verdana</option>
+                </select><br></td>
+            </tr>
+        </table>
+        <button name="print">Надрукувати текст</button>
+    </form>
+    <div class="showText">
+
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>

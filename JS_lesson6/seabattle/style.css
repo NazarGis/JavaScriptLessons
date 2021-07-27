@@ -2,11 +2,32 @@
     border-collapse: collapse;
 }
 .root table td{
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.5);
     width: 30px;
     height: 30px;
     text-align: center;
     vertical-align: middle;
     font-weight: bold;
     cursor: pointer;
+    background: url(./img/sea.jpg);
+}
+
+.root table td:first-of-type, .root table tr:first-of-type td{
+    background: none;
+}
+.ship, .shoot, .destroy{
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.ship{
+    background: url(./img/ship.jpg)!important;
+    background-size: cover;
+}
+.shoot{
+    background: url(./img/shoot.png) !important;
+    background-size: 30px;
+}
+.destroy{
+    background: url(./img/destroy.jpg) !important;
+    background-size: contain;
 }

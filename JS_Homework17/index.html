@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h2 class="title"></h2>
+        <div class="info">
+           <div></div>
+           <div></div>
+           <div><h3>Купівля</h3></div>
+           <div><h3>Продаж</h3></div> 
+        </div>
+        <h2>Конвертер валют (середній курс НБУ)</h2>
+        <form name="exchange" id="exchange">
+            <input type="text" name="firstvalue">
+            <select name="firstCCList" id='firstCCList'>
+                <option value="1">Українська гривня (UAH)</option>
+            </select><br>
+            <input type="text" name="secondvalue" readonly disabled>
+            <select name="secondCCList" id='secondCCList'>
+                <option value="1">Українська гривня (UAH)</option>
+            </select><br>
+            <button name="convert">Конвертувати</button>
+        </form>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

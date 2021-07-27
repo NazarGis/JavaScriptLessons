@@ -1,0 +1,47 @@
+@font-face {
+    font-family: AmpirDeco;
+    src: url(./fonts/ampir-deco_44e537f5c1460bc33671b2ceb3074360.woff);
+}
+
+button{
+    width: 100px;
+    height: 50px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.first-block p{
+    padding:10px;
+    cursor: pointer;
+}
+
+.text-highlight{
+    background: url(./img/quots.png) no-repeat 96% 100% rgb(116, 124, 46);
+    color: rgb(255, 255, 184);
+}
+
+.second-block table{
+    text-align: center;
+    margin: 0 auto;
+   
+    border-collapse: separate;
+}
+.second-block table td{
+    border:1px solid black;
+    background-color: grey;
+}
+#article{
+    width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+}   
+#article img {
+    float: left;
+    margin-right: 20px;
+}
+
+.btns{
+    text-align: center;
+}
+
+
+

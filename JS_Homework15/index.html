@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework</title>
+    
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Завдання №1</h1>
+        <form name="firstTask" id="firstTask">
+            <label for="loginFt">Your login:</label><br>
+            <input type="text" name="loginFt" id="loginFt"><br>
+            <label for="passwordFt">Your password:</label><br>
+            <input type="password" name="passwordFt" id="passwordFt"><br>
+            <label for="remember">Remember me</label>
+            <input type="checkbox" name="remember"><br>
+            <button name="signIn">Sign in</button>
+            <a href="#">Forgot password?</a>
+        </form>
+        <h1>Завдання №2</h1>
+        <form name="secondTask" id="secondTask">
+            <div class="form-container">
+            <div>
+                <label for="emailSt">Your email:</label><br>
+                <input type="text" name="emailSt" id="emailSt"><br>
+                <label for="passwordSt">Your password:</label><br>
+                <input type="password" name="passwordSt" id="passwordSt"><br>
+            </div>
+            <div>
+                <label for="loginSt">Your login:</label><br>
+                <input type="text" name="loginSt" id="loginSt"><br>
+                <label for="repeatPassSt">Repeat password:</label><br>
+                <input type="password" name="repeatPassSt" id="repeatPassSt"><br>
+            </div>
+            </div>
+            <button name="signUp">Sign up</button>
+        </form>
+        <h1>Завдання №3</h1>
+        <form name="thirdTask" id="thirdTask">
+            <div class="form-container">
+            <div>
+                <label for="firstname">Firstname:</label><br>
+                <input type="text" name="firstname" id="firstname"><br>
+                <label for="birthday">Birthday:</label><br>
+                <input type="date" name="birthday" id="birthday"><br>
+                <label for="country">Country:</label><br>
+                <input type="text" name="country" list="country">
+                <datalist id="country">
+                    <option >Україна</option>
+                    <option >Швеція</option>
+                    <option >Данія</option>
+                    <option >Норвегія</option>
+                    <option >Ісландія</option>
+                </datalist>
+            </div>
+            <div>
+                <label for="lastname">Lastname:</label><br>
+                <input type="text" name="lastname" id="lastname"><br>
+                <label for="gender">Gender:</label>
+                <input type="radio" name="gender" id='male' value="male">
+                <label for="male">male</label>
+                <input type="radio" name="gender" id='female' value="female" style="margin-bottom: 38px;">
+                <label for="female">female</label><br>
+                <label for="city">City:</label><br>
+                <input type="text" name="city" list="city">
+                <datalist id="city">
+                    <option >Рівне</option>
+                    <option >Стокгольм</option>
+                    <option >Копенгаген</option>
+                    <option >Осло</option>
+                    <option >Рейк'явік</option>
+                </datalist>
+            </div>
+            </div>
+            <label for="skills">Skills:</label>
+            <input type="checkbox" name="skills" id="html">
+            <label for="html">HTML</label>
+            <input type="checkbox" name="skills" id="css">
+            <label for="css">CSS</label>
+            <input type="checkbox" name="skills" id="js">
+            <label for="js">JS</label>
+            <input type="checkbox" name="skills" id="php">
+            <label for="php">PHP</label>
+            <input type="checkbox" name="skills" id="cPlus">
+            <label for="cPlus">C++</label>
+            <input type="checkbox" name="skills" id="java">
+            <label for="java">JAVA</label>
+            <input type="checkbox" name="skills" id="cSharp">
+            <label for="cSharp">C#</label>
+            <button name="save">Save</button>
+            <div class="result">
+                <h4>Result:</h4>
+                <table>
+                    <tr>
+                        <td>Firstname</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>LastName</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Birthday</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Country</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>City</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Skills</td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+        <h1>Завдання №4</h1>
+        <form name="fourthTask" id="fourthTask">
+            <div class="setColor">
+            <label for="red">R</label>
+            <input type="text"  name="red" id="red">
+            <label for="green">G</label>
+            <input type="text"  name="green" id="green">
+            <label for="Blue">B</label>
+            <input type="text"  name="blue" id="blue">
+            <button name="addColor">Add color</button>
+            </div>
+            <div class="colors-container"></div>
+        </form>
+        <h1>Завдання №5</h1>
+        <form name="fifthTask" id="fifthTask">
+            <div class="allQuestions">
+                <h4>All question:</h4>
+            </div>
+            <h4>Add new question:</h4>
+            <label for="question">Question:</label>
+            <input type="text" name="question" id="question"><br>
+            <label for="correctAnswer">Correct answer:</label>
+            <input type="text" name="correctAnswer" id="correctAnswer"><br>
+            <label for="wrongAnswer">Wrong answer:</label>
+            <input type="text" name="wrongAnswer" id="wrongAnswer"><br>
+            <button name="add">Add</button>
+        </form>
+
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
